@@ -46,7 +46,6 @@ public class Turma extends BaseIdentificador{
         this.alunos = new ArrayList<Aluno>();
         this.capacidadeTurma = capacidadeTurma;
     }
-
     public void ListarAlunos(){
         for(Aluno a1 : alunos){
             System.out.println(a1.toString());

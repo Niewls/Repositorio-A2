@@ -1,6 +1,6 @@
 package poo.projeto.dominio;
 
-public abstract class BaseObjetoAluno extends BaseIdentificador{
+public abstract class  BaseObjetoAluno extends BaseIdentificador{
     protected Aluno aluno;
 
     public Aluno getAluno() {

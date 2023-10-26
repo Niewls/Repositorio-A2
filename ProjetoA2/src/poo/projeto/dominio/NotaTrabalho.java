@@ -22,5 +22,10 @@ public class NotaTrabalho extends BaseObjetoAluno{
         this.trabalho = trabalho;
         this.nota = nota;
     }
+    @Override
+    public String toString() {
+        return "NotaTrabalho [codigo = "+ codigo + "aluno = "+ aluno + "trabalho=" + trabalho + ", nota=" + nota + "]";
+    }
+    
     
 }

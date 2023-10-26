@@ -56,5 +56,11 @@ public class RendimentoEscolar extends BaseObjetoAluno{
         this.mediaTrabalhos = mediaTrabalhos;
         this.mediaGeral = mediaGeral;
     }
+    @Override
+    public String toString() {
+        return "RendimentoEscolar [codigo = "+ codigo + "aluno = "+ aluno + "turma=" + turma + ", nota1Prova=" + nota1Prova + ", nota2Prova=" + nota2Prova
+                + ", Notastrabalhos=" + Notastrabalhos + ", mediaTrabalhos=" + mediaTrabalhos + ", mediaGeral="
+                + mediaGeral + "]";
+    }
     
 }

@@ -36,7 +36,17 @@ public class Aluno extends BasePessoa{
     }
     @Override
     public String toString() {
-        return "Aluno [periodo=" + periodo + ", turma=" + turma + ", rendimentoEscolar=" + rendimentoEscolar + "]";
+        return "Aluno [codigo =" + codigo + "nome = "+ nome + "Senha = "+ senha + "Data de Nascimento =" + dataNascimento + "Nome de Usuário = " + nomeUsuario + "periodo=" + periodo + ", turma=" + turma + ", rendimentoEscolar=" + rendimentoEscolar + "]";
+    }
+
+    public void ListarTurmaAluno(){
+        System.out.println(turma.toString());
+    }
+
+    public void ListarDisciplinasAluno(){
+       for(Disciplina d1 : turma.getDisciplina()){
+        System.out.println(d1.toString());
+       }
     }
 
     

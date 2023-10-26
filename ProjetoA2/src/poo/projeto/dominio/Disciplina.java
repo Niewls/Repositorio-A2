@@ -15,5 +15,11 @@ public class Disciplina extends BaseDadosComuns{
         super(codigo, nome);
         this.ementa = ementa;
     }
+
+    @Override
+    public String toString() {
+        return "Disciplina [codigo = "+ codigo + "nome = "+ nome +"ementa=" + ementa + "]";
+    }
+    
     
 }

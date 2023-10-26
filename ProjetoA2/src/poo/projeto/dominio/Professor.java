@@ -32,6 +32,12 @@ public class Professor extends BasePessoa{
         }
     }
 
+    @Override
+    public String toString() {
+        return "Professor [codigo = "+ codigo + "nome = "+ nome + "senha = " + senha + "Data de Nascimento = "+ dataNascimento +"Nome de Usuário = "+ nomeUsuario + "cargo=" + cargo + ", turmas=" + turmas + "]";
+    }
+    
+
     
     
     
