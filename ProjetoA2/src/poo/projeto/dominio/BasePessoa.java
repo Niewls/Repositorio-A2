@@ -24,6 +24,9 @@ public abstract class BasePessoa extends BaseDadosComuns{
     public void setNomeUsuario(String nomeUsuario) {
         this.nomeUsuario = nomeUsuario;
     }
+    public BasePessoa() {
+       
+    }
     public BasePessoa(int codigo, String nome, String senha, LocalDate dataNascimento, String nomeUsuario) {
         super(codigo, nome);
         this.senha = senha;

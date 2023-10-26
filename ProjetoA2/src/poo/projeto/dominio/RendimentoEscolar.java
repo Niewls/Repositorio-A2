@@ -1,20 +1,13 @@
 package poo.projeto.dominio;
-import java.util.List;
+import java.util.ArrayList;
 
-public class RendimentoEscolar {
-    private Aluno aluno;
+public class RendimentoEscolar extends BaseObjetoAluno{
     private Turma turma;
     private double nota1Prova;
     private double nota2Prova;
-    private List<NotaTrabalho> trabalhos; 
+    private ArrayList<NotaTrabalho> Notastrabalhos; 
     private double mediaTrabalhos;
     private double mediaGeral;
-    public Aluno getAluno() {
-        return aluno;
-    }
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
-    }
     public Turma getTurma() {
         return turma;
     }
@@ -33,11 +26,11 @@ public class RendimentoEscolar {
     public void setNota2Prova(double nota2Prova) {
         this.nota2Prova = nota2Prova;
     }
-    public List<NotaTrabalho> getTrabalhos() {
-        return trabalhos;
+    public ArrayList<NotaTrabalho> getTrabalhos() {
+        return Notastrabalhos;
     }
-    public void setTrabalhos(List<NotaTrabalho> trabalhos) {
-        this.trabalhos = trabalhos;
+    public void setTrabalhos(ArrayList<NotaTrabalho> Notastrabalhos) {
+        this.Notastrabalhos = Notastrabalhos;
     }
     public double getMediaTrabalhos() {
         return mediaTrabalhos;
@@ -51,14 +44,17 @@ public class RendimentoEscolar {
     public void setMediaGeral(double mediaGeral) {
         this.mediaGeral = mediaGeral;
     }
-    public RendimentoEscolar(Aluno aluno, Turma turma, double nota1Prova, double nota2Prova,
-            List<NotaTrabalho> trabalhos, double mediaTrabalhos, double mediaGeral) {
-        this.aluno = aluno;
-        this.turma = turma;
+    public RendimentoEscolar() {
+    }
+    public RendimentoEscolar(int codigo, Aluno aluno, Turma turma, double nota1Prova, double nota2Prova,
+            ArrayList<NotaTrabalho> Notastrabalhos, double mediaTrabalhos, double mediaGeral) {
+        super(codigo, aluno);
+        this.turma = new Turma();
         this.nota1Prova = nota1Prova;
         this.nota2Prova = nota2Prova;
-        this.trabalhos = trabalhos;
+        this.Notastrabalhos = new ArrayList<NotaTrabalho>();
         this.mediaTrabalhos = mediaTrabalhos;
         this.mediaGeral = mediaGeral;
     }
+    
 }

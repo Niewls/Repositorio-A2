@@ -8,6 +8,9 @@ public abstract class BaseIdentificador {
     public void setCodigo(int codigo) {
         this.codigo = codigo;
     }
+    
+    public BaseIdentificador() {
+    }
     public BaseIdentificador(int codigo) {
         this.codigo = codigo;
     }
